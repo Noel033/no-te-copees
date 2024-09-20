@@ -25,18 +25,18 @@ body {
 h2 {
   font-size: 3rem;
   animation: color-change 5s infinite;
-  animation: blink 1s infinite;
+  animation: blink 0.5s infinite;
 }
 
 @keyframes color-change {
   0% {
-    color: #eadada;
+    color: #111715;
   }
   50% {
-    color: #dbd9d4;
+    color: #111715;
   }
   100% {
-    color: #cacad5;
+    color: #111715;
   }
 }
 
@@ -78,7 +78,7 @@ button {
 #result h2 {
   font-size: 2rem;
   animation: color-change 2s infinite;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px #111715;
 }
 
 @media (max-width: 768px) {
