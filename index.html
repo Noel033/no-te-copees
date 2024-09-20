@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Reward Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="max-w-md">
+      <h2 class="text-2xl font-bold mb-4 text-center">
+        Calculadora de Recompensas
+      </h2>
+
+      <div class="mb-4">
+        <label for="missions"> Misiones completadas: </label>
+        <input id="missions" type="number" value="0" />
+      </div>
+
+      <div class="mb-4">
+        <label for="enemies"> Enemigos derrotados: </label>
+        <input id="enemies" type="number" value="0" />
+      </div>
+
+      <div class="mb-4">
+        <label for="rewardType"> Tipo de recompensa: </label>
+        <select id="rewardType">
+          <option value="gold">Monedas de oro</option>
+          <option value="gems">Gemas</option>
+          <option value="xp">Puntos de experiencia</option>
+        </select>
+      </div>
+
+      <button onclick="calculateReward()">Calcular</button>
+
+      <div id="result"></div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
